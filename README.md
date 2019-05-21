@@ -91,6 +91,7 @@ while True:
 这样一个很简陋额的2048就出现了：
 
 ![简陋版](http://img.blog.csdn.net/20170621192925510?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 4.考虑优化它，首先是至少有个标题吧，上面可以加一些东西，比如说什么最高分、悔棋（其实实现这个功能不难，多开个数
 组就可以，但个人感觉最好不能悔棋，便没有去实现），以及各数字的颜色应该不同，这个去网上查一下各颜色的RGB的值，
 字体的Surface设置一下就好以及各数字的颜色应该不同，这个去网上查一下各颜色的RGB的值，字体的Surface设置一下就好
@@ -132,17 +133,23 @@ class Button(object):
 8.恰巧让舍友看到了，便安利我一个软件：
 
 ![这里写图片描述](http://img.blog.csdn.net/20170621193642123?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 是一个屏幕取色器，通过这个软件，点击屏幕的颜色，可以直接分析出来RGB（神器），不过相同的RGB，在网页上与在pygame还是有色差的，我最后会说解决方法，嘻嘻，然后自己的2048就变样了
+
 ![这里写图片描述](http://img.blog.csdn.net/20170621193716427?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-9.这样就剩下最上面按钮的处理上了，无奈自己一直找不到好看的样式，便直接在网上找了张图片，
+9.这样就剩下最上面按钮的处理上了，无奈自己一直找不到好看的样式，便直接在网上找了张图片
+
 ![这里写图片描述](http://img.blog.csdn.net/20170621193812560?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 把这个图片当做Surface贴到screen中就可以，注意原来的按钮NEW、Menu位置对应到图片上来，嘻
 嘻，然后我滴2048就变成这个样子了
+
 ![这里写图片描述](http://img.blog.csdn.net/20170621193849035?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 10.我们把这两个按钮的颜色调成图片原按钮的颜色，然后把两个数字Surface贴上去就可以
 嘻嘻，这个是成品：
+
 ![这里写图片描述](http://img.blog.csdn.net/20170621193912169?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvWWFuY3lf/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## 技巧
 
